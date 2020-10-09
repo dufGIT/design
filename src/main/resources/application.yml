@@ -1,0 +1,6 @@
+logging:
+  level:
+    learn:
+      design:
+        patterns:
+          demo: trace
