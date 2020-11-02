@@ -4,7 +4,8 @@ import learn.design.patterns.demo.builder.case1.service.IMap;
 
 /**
  * 高画质类
- * 1.建组组合，高画质地图加载方法
+ * 1.建造组合，高画质地图加载方法
+ *
  * @Author df
  * @Date 2020/10/10 11:20
  */
