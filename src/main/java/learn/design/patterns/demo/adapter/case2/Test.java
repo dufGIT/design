@@ -1,7 +1,7 @@
 package learn.design.patterns.demo.adapter.case2;
 
 /*
- *
+ * 接口适配示例
  * @Author df
  * @Date 2020/11/2 17:17
  */

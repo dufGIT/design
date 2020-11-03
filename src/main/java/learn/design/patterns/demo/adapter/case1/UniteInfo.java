@@ -3,11 +3,11 @@ package learn.design.patterns.demo.adapter.case1;
 import java.util.Date;
 
 /*
- * 统一的MQ消息体
+ * 统一的返回值消息体
  * @Author df
  * @Date 2020/10/30 16:03
  */
-public class RebateInfo {
+public class UniteInfo {
     private String userId;
     private String bizId;
     private String bizTime;

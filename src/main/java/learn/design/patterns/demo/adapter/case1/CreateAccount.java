@@ -7,7 +7,7 @@ import java.util.Date;
  * @Author df
  * @Date 2020/10/30 16:59
  */
-public class create_account {
+public class CreateAccount {
     private String number;      // 开户编号
     private String address;     // 开户地
     private Date accountDate;   // 开户时间

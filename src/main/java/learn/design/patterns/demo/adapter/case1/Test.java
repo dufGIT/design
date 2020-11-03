@@ -1,22 +1,19 @@
 package learn.design.patterns.demo.adapter.case1;
 
 import com.alibaba.fastjson.JSON;
-import learn.design.patterns.demo.adapter.case1.MqAdapter;
-import learn.design.patterns.demo.adapter.case1.RebateInfo;
-import learn.design.patterns.demo.adapter.case1.create_account;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 import java.util.HashMap;
 
 /*
- *
+ * 属性适配例子
  * @Author df
  * @Date 2020/10/30 16:58
  */
 public class Test {
     public static void main(String[] args) {
-        create_account create_account = new create_account();
+        CreateAccount create_account = new CreateAccount();
         create_account.setNumber("100001");
         create_account.setAddress("北京");
         create_account.setAccountDate(new Date());
@@ -27,9 +24,9 @@ public class Test {
         link01.put("bizTime", "accountDate");
         link01.put("desc", "desc");
         try {
-            RebateInfo rebateInfo = MqAdapter.filter(JSON.toJSONString(create_account), link01);
-            System.out.println("mq.create_account(适配前)" + JSON.toJSONString(create_account));
-            System.out.println("mq.create_account(适配后)" + JSON.toJSONString(rebateInfo));
+            UniteInfo rebateInfo = FieldAdapter.filter(JSON.toJSONString(create_account), link01);
+            System.out.println("create_account(适配前)" + JSON.toJSONString(create_account));
+            System.out.println("UniteInfo(适配后)" + JSON.toJSONString(rebateInfo));
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
